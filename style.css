@@ -73,7 +73,7 @@ body::before{
 }
 .left-container{
     border-radius: 10px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     grid-row: span 2;
     height: 150px;
     backdrop-filter: blur(10px);
@@ -81,7 +81,7 @@ body::before{
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 .ad-container{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 10px;
     width: auto;
     height: 130px;
@@ -95,7 +95,7 @@ body::before{
     font-weight: bolder;
 }
 .first{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     align-self: self-start;
     
 }
@@ -104,7 +104,7 @@ body::before{
 .frequent-icons{
     display: flex;
     margin-top: 20px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: auto;
     display: flex;
     justify-content: start;
@@ -115,7 +115,7 @@ body::before{
     padding: 2px;
    display: flex;
    flex-direction: column;
-    border: 2px solid rgb(0, 234, 255);
+    /* border: 2px solid rgb(0, 234, 255); */
     height: auto;
     width: auto;
     justify-content: center;
@@ -146,4 +146,19 @@ body::before{
 .camera-text{
     display: flex;
     gap: 20px;
+}
+.lower-bar{
+    display: flex;
+    justify-content: center;
+}
+.search-bar{
+    /* border: 2px solid white; */
+    height: 50px;
+    width: 500px;
+    backdrop-filter: blur(10px);
+    background:rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    font-size: 32px;
+    border-radius: 20px;
+    
 }
