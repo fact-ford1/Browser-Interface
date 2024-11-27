@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,6 +9,8 @@
     color: white;
 }
 body{
+    
+
     background-color: aqua;
     /* background-image: url(image/drop.jpg); */
     background-image: url(image/plouzane.jpg);
@@ -16,6 +21,7 @@ body{
     background-position: center;
     /* background-image: linear-gradient(rgb(0, 0, 0, 0.9)),
     url(image/drop.jpg); */
+    font-family: "Mulish", sans-serif;
 
 }
 body::before{
@@ -31,42 +37,78 @@ body::before{
 
 }
 .left-content{
-    border: 2px solid white;
-    display: flex;
-    justify-content: space-between;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 300px;
 }
+.left-content::before{
+    
+
+}
+
 .main-container{
     display: flex;
     align-self:flex-start;
     gap: 20px;
     
 }
+.number{
+    font-size: 30px;
+}
+.words{
+    font-size: 20px;
+}
+.first-number{
+    color: #f28508;
+    font-weight: bolder;
+}
+.second-number{
+    color: #a358ea;
+    font-weight: bolder;
+
+}
+.third-number{
+    font-weight: bolder;
+}
 .left-container{
     border-radius: 10px;
     border: 2px solid white;
-    width: 300px;
+    grid-row: span 2;
     height: 150px;
-}
-.first{
-    border: 2px solid white;
-    align-self: self-start;
-    
+    backdrop-filter: blur(10px);
+    background:rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 .ad-container{
     border: 2px solid white;
     border-radius: 10px;
     width: auto;
     height: 130px;
-    background-color: rgb(62, 90, 85);
-    filter: blur(1px);
+    backdrop-filter: blur(10px);
+    background:rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+    
+}
+.left-container p{
+    font-weight: bolder;
+}
+.first{
+    border: 2px solid white;
+    align-self: self-start;
     
 }
 
+
 .frequent-icons{
+    display: flex;
+    margin-top: 20px;
     border: 2px solid white;
     width: auto;
     display: flex;
     justify-content: start;
+    flex:0 0 auto ;
     gap: 20px;
 }
 .icons{
@@ -100,4 +142,8 @@ body::before{
 }
 .icons p {
     align-self: center;
+}
+.camera-text{
+    display: flex;
+    gap: 20px;
 }
