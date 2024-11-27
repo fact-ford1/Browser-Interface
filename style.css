@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* background-position: center; */
+    box-shadow: inset;
+}
+body{
+    background-color: aqua;
+    /* background-image: url(image/drop.jpg); */
+    background-image: url(image/plouzane.jpg);
+    background-image: url(image/water-lily.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: linear-gradient(rgb(0, 0, 0, 0.5)),
+    url(image/drop.jpg); */
+
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1), transparent);
+    z-index: 1;
+    pointer-events: none;
+
+}
